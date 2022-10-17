@@ -21,8 +21,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 /*----------------------------------------------------------------
+--------------------- Public Function Prototypes ----------------
+----------------------------------------------------------------*/
+//#define LCD_8BIT_MODE_EN
+#define LCD_4BIT_MODE_EN
+#define HALF_PORT_SHIFT 4
+/*----------------------------------------------------------------
 --------------------- Public Constants ---------------------------
 ----------------------------------------------------------------*/
+
 #define LCD_CLR_SCREEN				0x01
 #define LCD_RETURN_HOME				0x02
 #define LCD_ENTERY_DEC				0x04
