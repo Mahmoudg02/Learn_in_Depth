@@ -103,7 +103,7 @@
 ---PIN CONFIGRATION---
 ---------------------*/
 typedef struct
-{
+{	GPIO_REG_t* GPIO_PORT ; //Specifies GPIO Port instant .
 	uint16_t GPIO_PIN ;  //Specifies GPIO PIN number to configured according to ref @ GPIO_PINs_DEFINE
 	uint8_t GPIO_MODE ;  //Specifies GPIO PIN MODE to configured according to ref   @ GPIO_PINs_MODE
 	uint8_t GPIO_SPEED ; //Specifies GPIO PIN SPEED to configured according to ref @ GPIO_PINs_SPEED
