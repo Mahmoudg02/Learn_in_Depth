@@ -137,6 +137,8 @@ void MCAL_UART_Init(USART_REG_t* USARTx ,UART_Config_t * UART_Config)
 			NVIC_IRQ39_USART3_EN() ;
 		}
 	}
+
+	MCAL_UART_GPIO_SetPins( USARTx) ;
 }
 
 /******************************************************************************
