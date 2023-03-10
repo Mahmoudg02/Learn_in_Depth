@@ -1,0 +1,55 @@
+/*
+ * main.c
+ *
+ *  Created on: 26 Nov 2022
+ *      Author: MAshr
+ */
+
+#define F_CPU 1000000UL
+
+#include "Lib/GPIO/GPIO.h"
+#include "Lib/I2C/I2C.h"
+#include <util/delay.h>
+
+
+int main(void)
+{
+	u8 ch_data = 0 ;
+
+
+#ifdef I2C_Master_Mode
+	I2C_config_t conf ;
+	conf.fcpu = F_CPU ;
+	conf.prescaller = prescaller_1 ;
+	conf.SCL_Clock = 0x48 ;
+	MCAL_I2C_Init(&conf) ;
+#endif
+
+
+#ifdef I2C_Slave_Mode
+	myDDRA = 0xFF ;
+	MCAL_I2C_SetAdd(0b11010000) ;
+#endif
+
+	while(1){
+
+#ifdef I2C_Master_Mode
+		_delay_ms(100);
+		MCAL_I2C_Start() ;
+		MCAL_I2C_Send(0b11010000);  //SLA + R/W
+		MCAL_I2C_Wait(0x18) ;
+		MCAL_I2C_Send(ch_data++) ;
+		MCAL_I2C_Wait(0x28) ;
+		MCAL_I2C_Stop() ;
+#endif
+
+#ifdef I2C_Slave_Mode
+		MCAL_I2C_Read(&ch_data) ;
+		myPORTA = ch_data ;
+#endif
+
+
+	}
+	return 0 ;
+}
+

@@ -1,0 +1,20 @@
+01:31:37 **** Incremental Build of configuration Debug for project I2C_Slave ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 I2C_Slave.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    1694 bytes (10.3% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+01:31:37 Build Finished. 0 errors, 0 warnings. (took 139ms)
+

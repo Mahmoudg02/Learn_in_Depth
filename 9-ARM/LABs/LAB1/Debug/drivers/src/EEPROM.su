@@ -1,0 +1,3 @@
+../drivers/src/EEPROM.c:38:6:HAL_EEPROM_Init	48	static
+../drivers/src/EEPROM.c:63:9:HAL_EEPROM_Write_NBytes	296	static
+../drivers/src/EEPROM.c:82:9:HAL_EEPROM_Read_NBytes	40	static

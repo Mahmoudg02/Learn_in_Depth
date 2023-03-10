@@ -1,0 +1,31 @@
+00:28:08 **** Incremental Build of configuration Debug for project ADC_sec ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: ADC_sec.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ADC_sec.map -mmcu=atmega32 -o "ADC_sec.elf" ./ADC.o ./main.o   
+Finished building target: ADC_sec.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ADC_sec.elf  >"ADC_sec.lss"
+Finished building: ADC_sec.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC_sec.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     548 bytes (1.7% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 

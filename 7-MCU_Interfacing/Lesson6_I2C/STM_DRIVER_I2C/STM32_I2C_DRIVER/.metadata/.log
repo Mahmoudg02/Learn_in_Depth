@@ -1,0 +1,34 @@
+!SESSION 2023-01-16 18:17:40.262 -----------------------------------------------
+eclipse.buildId=Version 1.10.1
+java.version=11.0.14.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  C:\Users\MAshr\OneDrive\Desktop\STM_DRIVER_I2C\STM32_I2C_DRIVER\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Users\MAshr\OneDrive\Desktop\STM_DRIVER_I2C\STM32_I2C_DRIVER\.project
+
+!ENTRY org.eclipse.ui 2 0 2023-01-16 18:19:55.704
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2023-01-16 18:19:55.704
+!MESSAGE Cannot bind to an undefined command: plug-in='com.genuitec.eclipse.theming.ui', id='com.genuitec.myeclipse.help.darktheme.commandid'
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2023-01-16 18:19:56.369
+!MESSAGE A DevStyle Theme is being activated on this workspace; preparing colors and configuration
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2023-01-16 18:19:56.381
+!MESSAGE DevStyle has archived current color configurations to alternate preferences - will be restored when switching out of the DevStyle Theme
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-01-16 18:19:58.494
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-01-16 18:19:58.537
+!MESSAGE Log4j initialized with config file C:\Users\MAshr\OneDrive\Desktop\STM_DRIVER_I2C\STM32_I2C_DRIVER\.metadata\.log4j.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-01-16 18:19:59.210
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\MAshr'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-01-16 18:20:00.718
+!MESSAGE Started RMI Server, listening on port 41337

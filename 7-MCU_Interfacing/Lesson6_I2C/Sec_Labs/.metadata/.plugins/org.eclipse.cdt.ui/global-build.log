@@ -1,0 +1,1321 @@
+18:13:45 **** Incremental Build of configuration Debug for project I2C_M_rec_S_send ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 I2C_M_rec_S_send.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    4820 bytes (29.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:14:08 **** Incremental Build of configuration Debug for project I2C_M_rec_S_send ****
+make all 
+Building file: ../Lib/I2C/I2C.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Lib/I2C/I2C.d" -MT"Lib/I2C/I2C.o" -c -o "Lib/I2C/I2C.o" "../Lib/I2C/I2C.c"
+Finished building: ../Lib/I2C/I2C.c
+ 
+Building target: I2C_M_rec_S_send.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,I2C_M_rec_S_send.map -mmcu=atmega16 -o "I2C_M_rec_S_send.elf" ./Lib/I2C/I2C.o  ./Lib/GPIO/GPIO.o  ./main.o   
+Finished building target: I2C_M_rec_S_send.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S I2C_M_rec_S_send.elf  >"I2C_M_rec_S_send.lss"
+Finished building: I2C_M_rec_S_send.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 I2C_M_rec_S_send.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    4820 bytes (29.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:14:09 **** Incremental Build of configuration Debug for project slave ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 slave.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    1626 bytes (9.9% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:14:25 **** Incremental Build of configuration Debug for project I2C_M_rec_S_send ****
+make all 
+Building file: ../Lib/I2C/I2C.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Lib/I2C/I2C.d" -MT"Lib/I2C/I2C.o" -c -o "Lib/I2C/I2C.o" "../Lib/I2C/I2C.c"
+Finished building: ../Lib/I2C/I2C.c
+ 
+Building target: I2C_M_rec_S_send.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,I2C_M_rec_S_send.map -mmcu=atmega16 -o "I2C_M_rec_S_send.elf" ./Lib/I2C/I2C.o  ./Lib/GPIO/GPIO.o  ./main.o   
+Finished building target: I2C_M_rec_S_send.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S I2C_M_rec_S_send.elf  >"I2C_M_rec_S_send.lss"
+Finished building: I2C_M_rec_S_send.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 I2C_M_rec_S_send.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    4820 bytes (29.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:14:25 **** Incremental Build of configuration Debug for project slave ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 slave.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    1626 bytes (9.9% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:21:54 **** Incremental Build of configuration Debug for project I2C_M_rec_S_send ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 I2C_M_rec_S_send.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    4820 bytes (29.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:21:54 **** Incremental Build of configuration Debug for project slave ****
+make all 
+Building file: ../Lib/I2C/I2C.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Lib/I2C/I2C.d" -MT"Lib/I2C/I2C.o" -c -o "Lib/I2C/I2C.o" "../Lib/I2C/I2C.c"
+Finished building: ../Lib/I2C/I2C.c
+ 
+Building target: slave.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,slave.map -mmcu=atmega16 -o "slave.elf" ./Lib/I2C/I2C.o  ./Lib/GPIO/GPIO.o  ./main.o   
+Finished building target: slave.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S slave.elf  >"slave.lss"
+Finished building: slave.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 slave.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    1638 bytes (10.0% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:22:09 **** Incremental Build of configuration Debug for project I2C_M_rec_S_send ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 I2C_M_rec_S_send.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    4820 bytes (29.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:22:09 **** Incremental Build of configuration Debug for project slave ****
+make all 
+Building file: ../Lib/I2C/I2C.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Lib/I2C/I2C.d" -MT"Lib/I2C/I2C.o" -c -o "Lib/I2C/I2C.o" "../Lib/I2C/I2C.c"
+Finished building: ../Lib/I2C/I2C.c
+ 
+Building target: slave.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,slave.map -mmcu=atmega16 -o "slave.elf" ./Lib/I2C/I2C.o  ./Lib/GPIO/GPIO.o  ./main.o   
+Finished building target: slave.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S slave.elf  >"slave.lss"
+Finished building: slave.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 slave.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    1632 bytes (10.0% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:22:41 **** Incremental Build of configuration Debug for project I2C_M_rec_S_send ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 I2C_M_rec_S_send.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    4820 bytes (29.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:22:41 **** Incremental Build of configuration Debug for project slave ****
+make all 
+Building file: ../Lib/I2C/I2C.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Lib/I2C/I2C.d" -MT"Lib/I2C/I2C.o" -c -o "Lib/I2C/I2C.o" "../Lib/I2C/I2C.c"
+Finished building: ../Lib/I2C/I2C.c
+ 
+Building target: slave.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,slave.map -mmcu=atmega16 -o "slave.elf" ./Lib/I2C/I2C.o  ./Lib/GPIO/GPIO.o  ./main.o   
+Finished building target: slave.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S slave.elf  >"slave.lss"
+Finished building: slave.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 slave.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    1638 bytes (10.0% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:22:46 **** Incremental Build of configuration Debug for project I2C_M_rec_S_send ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 I2C_M_rec_S_send.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    4820 bytes (29.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:22:47 **** Incremental Build of configuration Debug for project slave ****
+make all 
+Building file: ../Lib/I2C/I2C.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Lib/I2C/I2C.d" -MT"Lib/I2C/I2C.o" -c -o "Lib/I2C/I2C.o" "../Lib/I2C/I2C.c"
+Finished building: ../Lib/I2C/I2C.c
+ 
+Building target: slave.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,slave.map -mmcu=atmega16 -o "slave.elf" ./Lib/I2C/I2C.o  ./Lib/GPIO/GPIO.o  ./main.o   
+Finished building target: slave.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S slave.elf  >"slave.lss"
+Finished building: slave.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 slave.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    1638 bytes (10.0% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:24:54 **** Incremental Build of configuration Debug for project I2C_M_rec_S_send ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 I2C_M_rec_S_send.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    4820 bytes (29.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:24:54 **** Incremental Build of configuration Debug for project slave ****
+make all 
+Building file: ../Lib/I2C/I2C.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Lib/I2C/I2C.d" -MT"Lib/I2C/I2C.o" -c -o "Lib/I2C/I2C.o" "../Lib/I2C/I2C.c"
+Finished building: ../Lib/I2C/I2C.c
+ 
+Building target: slave.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,slave.map -mmcu=atmega16 -o "slave.elf" ./Lib/I2C/I2C.o  ./Lib/GPIO/GPIO.o  ./main.o   
+Finished building target: slave.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S slave.elf  >"slave.lss"
+Finished building: slave.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 slave.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    1638 bytes (10.0% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:25:57 **** Incremental Build of configuration Debug for project I2C_M_rec_S_send ****
+make all 
+Building file: ../Lib/I2C/I2C.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Lib/I2C/I2C.d" -MT"Lib/I2C/I2C.o" -c -o "Lib/I2C/I2C.o" "../Lib/I2C/I2C.c"
+Finished building: ../Lib/I2C/I2C.c
+ 
+Building target: I2C_M_rec_S_send.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,I2C_M_rec_S_send.map -mmcu=atmega16 -o "I2C_M_rec_S_send.elf" ./Lib/I2C/I2C.o  ./Lib/GPIO/GPIO.o  ./main.o   
+Finished building target: I2C_M_rec_S_send.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S I2C_M_rec_S_send.elf  >"I2C_M_rec_S_send.lss"
+Finished building: I2C_M_rec_S_send.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 I2C_M_rec_S_send.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    4820 bytes (29.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:25:58 **** Incremental Build of configuration Debug for project slave ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 slave.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    1638 bytes (10.0% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:26:24 **** Incremental Build of configuration Debug for project I2C_M_rec_S_send ****
+make all 
+Building file: ../Lib/I2C/I2C.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Lib/I2C/I2C.d" -MT"Lib/I2C/I2C.o" -c -o "Lib/I2C/I2C.o" "../Lib/I2C/I2C.c"
+Finished building: ../Lib/I2C/I2C.c
+ 
+Building target: I2C_M_rec_S_send.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,I2C_M_rec_S_send.map -mmcu=atmega16 -o "I2C_M_rec_S_send.elf" ./Lib/I2C/I2C.o  ./Lib/GPIO/GPIO.o  ./main.o   
+Finished building target: I2C_M_rec_S_send.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S I2C_M_rec_S_send.elf  >"I2C_M_rec_S_send.lss"
+Finished building: I2C_M_rec_S_send.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 I2C_M_rec_S_send.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    4820 bytes (29.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:26:25 **** Incremental Build of configuration Debug for project slave ****
+make all 
+Building file: ../Lib/I2C/I2C.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Lib/I2C/I2C.d" -MT"Lib/I2C/I2C.o" -c -o "Lib/I2C/I2C.o" "../Lib/I2C/I2C.c"
+Finished building: ../Lib/I2C/I2C.c
+ 
+Building target: slave.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,slave.map -mmcu=atmega16 -o "slave.elf" ./Lib/I2C/I2C.o  ./Lib/GPIO/GPIO.o  ./main.o   
+Finished building target: slave.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S slave.elf  >"slave.lss"
+Finished building: slave.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 slave.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    1632 bytes (10.0% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:26:37 **** Incremental Build of configuration Debug for project I2C_M_rec_S_send ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 I2C_M_rec_S_send.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    4820 bytes (29.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:26:37 **** Incremental Build of configuration Debug for project slave ****
+make all 
+Building file: ../Lib/I2C/I2C.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Lib/I2C/I2C.d" -MT"Lib/I2C/I2C.o" -c -o "Lib/I2C/I2C.o" "../Lib/I2C/I2C.c"
+Finished building: ../Lib/I2C/I2C.c
+ 
+Building target: slave.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,slave.map -mmcu=atmega16 -o "slave.elf" ./Lib/I2C/I2C.o  ./Lib/GPIO/GPIO.o  ./main.o   
+Finished building target: slave.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S slave.elf  >"slave.lss"
+Finished building: slave.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 slave.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    1638 bytes (10.0% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:27:08 **** Incremental Build of configuration Debug for project I2C_M_rec_S_send ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 I2C_M_rec_S_send.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    4820 bytes (29.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:27:09 **** Incremental Build of configuration Debug for project slave ****
+make all 
+Building file: ../Lib/I2C/I2C.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Lib/I2C/I2C.d" -MT"Lib/I2C/I2C.o" -c -o "Lib/I2C/I2C.o" "../Lib/I2C/I2C.c"
+Finished building: ../Lib/I2C/I2C.c
+ 
+Building target: slave.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,slave.map -mmcu=atmega16 -o "slave.elf" ./Lib/I2C/I2C.o  ./Lib/GPIO/GPIO.o  ./main.o   
+Finished building target: slave.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S slave.elf  >"slave.lss"
+Finished building: slave.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 slave.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    1638 bytes (10.0% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:27:40 **** Incremental Build of configuration Debug for project I2C_M_rec_S_send ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 I2C_M_rec_S_send.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    4820 bytes (29.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:27:41 **** Incremental Build of configuration Debug for project slave ****
+make all 
+Building file: ../Lib/I2C/I2C.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Lib/I2C/I2C.d" -MT"Lib/I2C/I2C.o" -c -o "Lib/I2C/I2C.o" "../Lib/I2C/I2C.c"
+Finished building: ../Lib/I2C/I2C.c
+ 
+Building target: slave.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,slave.map -mmcu=atmega16 -o "slave.elf" ./Lib/I2C/I2C.o  ./Lib/GPIO/GPIO.o  ./main.o   
+Finished building target: slave.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S slave.elf  >"slave.lss"
+Finished building: slave.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 slave.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    1648 bytes (10.1% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:30:52 **** Incremental Build of configuration Debug for project I2C_M_rec_S_send ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 I2C_M_rec_S_send.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    4820 bytes (29.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:30:52 **** Incremental Build of configuration Debug for project slave ****
+make all 
+Building file: ../Lib/I2C/I2C.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Lib/I2C/I2C.d" -MT"Lib/I2C/I2C.o" -c -o "Lib/I2C/I2C.o" "../Lib/I2C/I2C.c"
+Finished building: ../Lib/I2C/I2C.c
+ 
+Building target: slave.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,slave.map -mmcu=atmega16 -o "slave.elf" ./Lib/I2C/I2C.o  ./Lib/GPIO/GPIO.o  ./main.o   
+Finished building target: slave.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S slave.elf  >"slave.lss"
+Finished building: slave.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 slave.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    1648 bytes (10.1% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:32:11 **** Incremental Build of configuration Debug for project I2C_M_rec_S_send ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 I2C_M_rec_S_send.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    4820 bytes (29.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:32:11 **** Incremental Build of configuration Debug for project slave ****
+make all 
+Building file: ../Lib/I2C/I2C.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Lib/I2C/I2C.d" -MT"Lib/I2C/I2C.o" -c -o "Lib/I2C/I2C.o" "../Lib/I2C/I2C.c"
+Finished building: ../Lib/I2C/I2C.c
+ 
+Building target: slave.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,slave.map -mmcu=atmega16 -o "slave.elf" ./Lib/I2C/I2C.o  ./Lib/GPIO/GPIO.o  ./main.o   
+Finished building target: slave.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S slave.elf  >"slave.lss"
+Finished building: slave.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 slave.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    1642 bytes (10.0% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:32:24 **** Incremental Build of configuration Debug for project I2C_M_rec_S_send ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 I2C_M_rec_S_send.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    4820 bytes (29.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:32:24 **** Incremental Build of configuration Debug for project slave ****
+make all 
+Building file: ../Lib/I2C/I2C.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Lib/I2C/I2C.d" -MT"Lib/I2C/I2C.o" -c -o "Lib/I2C/I2C.o" "../Lib/I2C/I2C.c"
+Finished building: ../Lib/I2C/I2C.c
+ 
+Building target: slave.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,slave.map -mmcu=atmega16 -o "slave.elf" ./Lib/I2C/I2C.o  ./Lib/GPIO/GPIO.o  ./main.o   
+Finished building target: slave.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S slave.elf  >"slave.lss"
+Finished building: slave.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 slave.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    1632 bytes (10.0% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:32:34 **** Incremental Build of configuration Debug for project I2C_M_rec_S_send ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 I2C_M_rec_S_send.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    4820 bytes (29.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:32:34 **** Incremental Build of configuration Debug for project slave ****
+make all 
+Building file: ../Lib/I2C/I2C.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Lib/I2C/I2C.d" -MT"Lib/I2C/I2C.o" -c -o "Lib/I2C/I2C.o" "../Lib/I2C/I2C.c"
+Finished building: ../Lib/I2C/I2C.c
+ 
+Building target: slave.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,slave.map -mmcu=atmega16 -o "slave.elf" ./Lib/I2C/I2C.o  ./Lib/GPIO/GPIO.o  ./main.o   
+Finished building target: slave.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S slave.elf  >"slave.lss"
+Finished building: slave.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 slave.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    1638 bytes (10.0% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:32:54 **** Incremental Build of configuration Debug for project I2C_M_rec_S_send ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 I2C_M_rec_S_send.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    4820 bytes (29.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:32:54 **** Incremental Build of configuration Debug for project slave ****
+make all 
+Building file: ../Lib/I2C/I2C.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Lib/I2C/I2C.d" -MT"Lib/I2C/I2C.o" -c -o "Lib/I2C/I2C.o" "../Lib/I2C/I2C.c"
+Finished building: ../Lib/I2C/I2C.c
+ 
+Building target: slave.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,slave.map -mmcu=atmega16 -o "slave.elf" ./Lib/I2C/I2C.o  ./Lib/GPIO/GPIO.o  ./main.o   
+Finished building target: slave.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S slave.elf  >"slave.lss"
+Finished building: slave.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 slave.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    1638 bytes (10.0% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:33:18 **** Incremental Build of configuration Debug for project I2C_M_rec_S_send ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 I2C_M_rec_S_send.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    4820 bytes (29.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:33:18 **** Incremental Build of configuration Debug for project slave ****
+make all 
+Building file: ../Lib/I2C/I2C.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Lib/I2C/I2C.d" -MT"Lib/I2C/I2C.o" -c -o "Lib/I2C/I2C.o" "../Lib/I2C/I2C.c"
+Finished building: ../Lib/I2C/I2C.c
+ 
+Building target: slave.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,slave.map -mmcu=atmega16 -o "slave.elf" ./Lib/I2C/I2C.o  ./Lib/GPIO/GPIO.o  ./main.o   
+Finished building target: slave.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S slave.elf  >"slave.lss"
+Finished building: slave.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 slave.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    1638 bytes (10.0% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:34:24 **** Incremental Build of configuration Debug for project I2C_M_rec_S_send ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 I2C_M_rec_S_send.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    4820 bytes (29.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:34:25 **** Incremental Build of configuration Debug for project slave ****
+make all 
+Building file: ../Lib/I2C/I2C.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Lib/I2C/I2C.d" -MT"Lib/I2C/I2C.o" -c -o "Lib/I2C/I2C.o" "../Lib/I2C/I2C.c"
+Finished building: ../Lib/I2C/I2C.c
+ 
+Building target: slave.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,slave.map -mmcu=atmega16 -o "slave.elf" ./Lib/I2C/I2C.o  ./Lib/GPIO/GPIO.o  ./main.o   
+Finished building target: slave.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S slave.elf  >"slave.lss"
+Finished building: slave.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 slave.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    1638 bytes (10.0% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:35:31 **** Incremental Build of configuration Debug for project I2C_M_rec_S_send ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 I2C_M_rec_S_send.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    4820 bytes (29.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:35:32 **** Incremental Build of configuration Debug for project slave ****
+make all 
+Building file: ../Lib/I2C/I2C.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Lib/I2C/I2C.d" -MT"Lib/I2C/I2C.o" -c -o "Lib/I2C/I2C.o" "../Lib/I2C/I2C.c"
+Finished building: ../Lib/I2C/I2C.c
+ 
+Building target: slave.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,slave.map -mmcu=atmega16 -o "slave.elf" ./Lib/I2C/I2C.o  ./Lib/GPIO/GPIO.o  ./main.o   
+Finished building target: slave.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S slave.elf  >"slave.lss"
+Finished building: slave.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 slave.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    1662 bytes (10.1% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:36:12 **** Incremental Build of configuration Debug for project I2C_M_rec_S_send ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 I2C_M_rec_S_send.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    4820 bytes (29.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:36:12 **** Incremental Build of configuration Debug for project slave ****
+make all 
+Building file: ../Lib/I2C/I2C.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Lib/I2C/I2C.d" -MT"Lib/I2C/I2C.o" -c -o "Lib/I2C/I2C.o" "../Lib/I2C/I2C.c"
+Finished building: ../Lib/I2C/I2C.c
+ 
+Building target: slave.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,slave.map -mmcu=atmega16 -o "slave.elf" ./Lib/I2C/I2C.o  ./Lib/GPIO/GPIO.o  ./main.o   
+Finished building target: slave.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S slave.elf  >"slave.lss"
+Finished building: slave.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 slave.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    1656 bytes (10.1% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:37:49 **** Incremental Build of configuration Debug for project I2C_M_rec_S_send ****
+make all 
+Building file: ../Lib/I2C/I2C.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Lib/I2C/I2C.d" -MT"Lib/I2C/I2C.o" -c -o "Lib/I2C/I2C.o" "../Lib/I2C/I2C.c"
+Finished building: ../Lib/I2C/I2C.c
+ 
+Building target: I2C_M_rec_S_send.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,I2C_M_rec_S_send.map -mmcu=atmega16 -o "I2C_M_rec_S_send.elf" ./Lib/I2C/I2C.o  ./Lib/GPIO/GPIO.o  ./main.o   
+Finished building target: I2C_M_rec_S_send.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S I2C_M_rec_S_send.elf  >"I2C_M_rec_S_send.lss"
+Finished building: I2C_M_rec_S_send.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 I2C_M_rec_S_send.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    4820 bytes (29.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:37:50 **** Incremental Build of configuration Debug for project slave ****
+make all 
+Building file: ../Lib/I2C/I2C.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Lib/I2C/I2C.d" -MT"Lib/I2C/I2C.o" -c -o "Lib/I2C/I2C.o" "../Lib/I2C/I2C.c"
+Finished building: ../Lib/I2C/I2C.c
+ 
+Building target: slave.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,slave.map -mmcu=atmega16 -o "slave.elf" ./Lib/I2C/I2C.o  ./Lib/GPIO/GPIO.o  ./main.o   
+Finished building target: slave.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S slave.elf  >"slave.lss"
+Finished building: slave.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 slave.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    1656 bytes (10.1% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:40:24 **** Incremental Build of configuration Debug for project I2C_M_rec_S_send ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 I2C_M_rec_S_send.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    4820 bytes (29.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:40:24 **** Incremental Build of configuration Debug for project slave ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 slave.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    1656 bytes (10.1% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:40:27 **** Incremental Build of configuration Debug for project I2C_M_rec_S_send ****
+make all 
+Building file: ../Lib/I2C/I2C.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Lib/I2C/I2C.d" -MT"Lib/I2C/I2C.o" -c -o "Lib/I2C/I2C.o" "../Lib/I2C/I2C.c"
+Finished building: ../Lib/I2C/I2C.c
+ 
+Building target: I2C_M_rec_S_send.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,I2C_M_rec_S_send.map -mmcu=atmega16 -o "I2C_M_rec_S_send.elf" ./Lib/I2C/I2C.o  ./Lib/GPIO/GPIO.o  ./main.o   
+Finished building target: I2C_M_rec_S_send.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S I2C_M_rec_S_send.elf  >"I2C_M_rec_S_send.lss"
+Finished building: I2C_M_rec_S_send.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 I2C_M_rec_S_send.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    4820 bytes (29.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:40:28 **** Incremental Build of configuration Debug for project slave ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 slave.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    1656 bytes (10.1% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+03:37:19 **** Build of configuration Debug for project I2C_M_rec_S_send ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 I2C_M_rec_S_send.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    4820 bytes (29.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+03:37:20 **** Build of configuration Debug for project slave ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 slave.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    1656 bytes (10.1% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+03:37:59 **** Incremental Build of configuration Debug for project I2C_M_rec_S_send ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:12:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:46: warning: unused variable 'temp'
+Finished building: ../main.c
+ 
+Building target: I2C_M_rec_S_send.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,I2C_M_rec_S_send.map -mmcu=atmega16 -o "I2C_M_rec_S_send.elf" ./Lib/I2C/I2C.o  ./Lib/GPIO/GPIO.o  ./main.o   
+Finished building target: I2C_M_rec_S_send.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S I2C_M_rec_S_send.elf  >"I2C_M_rec_S_send.lss"
+Finished building: I2C_M_rec_S_send.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 I2C_M_rec_S_send.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    4824 bytes (29.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+03:38:00 **** Incremental Build of configuration Debug for project slave ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 slave.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    1656 bytes (10.1% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+03:38:14 **** Incremental Build of configuration Debug for project I2C_M_rec_S_send ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:12:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:46: warning: unused variable 'temp'
+Finished building: ../main.c
+ 
+Building target: I2C_M_rec_S_send.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,I2C_M_rec_S_send.map -mmcu=atmega16 -o "I2C_M_rec_S_send.elf" ./Lib/I2C/I2C.o  ./Lib/GPIO/GPIO.o  ./main.o   
+Finished building target: I2C_M_rec_S_send.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S I2C_M_rec_S_send.elf  >"I2C_M_rec_S_send.lss"
+Finished building: I2C_M_rec_S_send.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 I2C_M_rec_S_send.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    4824 bytes (29.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+03:38:15 **** Incremental Build of configuration Debug for project slave ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 slave.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    1656 bytes (10.1% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 

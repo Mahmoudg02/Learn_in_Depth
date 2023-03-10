@@ -1,0 +1,8 @@
+../drivers/src/STM32F103_SPI.c:71:6:MCAL_SPI_Init	32	static
+../drivers/src/STM32F103_SPI.c:175:6:MCAL_SPI_RST	16	static
+../drivers/src/STM32F103_SPI.c:198:6:MCAL_SPI_SendData	24	static
+../drivers/src/STM32F103_SPI.c:219:6:MCAL_SPI_ReceiveData	24	static
+../drivers/src/STM32F103_SPI.c:240:6:MCAL_SPI_TXRX	24	static
+../drivers/src/STM32F103_SPI.c:265:6:MCAL_SPI_GPIO_SET_PINS	24	static
+../drivers/src/STM32F103_SPI.c:446:6:SPI1_IRQHandler	16	static
+../drivers/src/STM32F103_SPI.c:454:6:SPI2_IRQHandler	16	static

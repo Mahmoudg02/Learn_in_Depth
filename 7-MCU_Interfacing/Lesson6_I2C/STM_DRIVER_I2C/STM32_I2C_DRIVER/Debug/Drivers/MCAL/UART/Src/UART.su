@@ -1,0 +1,9 @@
+../Drivers/MCAL/UART/Src/UART.c:52:6:MCAL_UART_Init	32	static
+../Drivers/MCAL/UART/Src/UART.c:152:6:MCAL_UART_RST	16	static
+../Drivers/MCAL/UART/Src/UART.c:179:6:MCAL_UART_SendData	24	static
+../Drivers/MCAL/UART/Src/UART.c:209:6:MCAL_UART_Wait_TC	16	static
+../Drivers/MCAL/UART/Src/UART.c:223:6:MCAL_UART_RecieveData	24	static
+../Drivers/MCAL/UART/Src/UART.c:256:6:MCAL_UART_GPIO_SetPins	24	static
+../Drivers/MCAL/UART/Src/UART.c:365:6:USART1_IRQHandler	8	static
+../Drivers/MCAL/UART/Src/UART.c:368:6:USART2_IRQHandler	8	static
+../Drivers/MCAL/UART/Src/UART.c:372:6:USART3_IRQHandler	8	static

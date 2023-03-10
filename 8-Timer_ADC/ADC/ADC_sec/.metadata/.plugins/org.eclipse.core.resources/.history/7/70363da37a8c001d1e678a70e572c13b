@@ -1,0 +1,20 @@
+/*
+ * ADC.c
+ *
+ *  Created on: 4 Jan 2023
+ *      Author: MAshr
+ */
+
+#include "ADC.h"
+void MCAL_ADC_Init(ADC_config * config) {
+
+
+
+
+}
+uint16_t MCAL_ADC_GetRead(ADC_channel) {
+
+
+
+return ADC ;
+}

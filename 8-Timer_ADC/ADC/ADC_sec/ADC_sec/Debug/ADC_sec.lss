@@ -1,0 +1,333 @@
+
+ADC_sec.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00000224  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .stab         00000660  00000000  00000000  00000278  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  2 .stabstr      00000925  00000000  00000000  000008d8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 2a 00 	jmp	0x54	; 0x54 <__ctors_end>
+   4:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+   8:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+   c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  10:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  14:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  18:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  1c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  20:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  24:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  28:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  2c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  30:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  34:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  38:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  3c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  40:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  44:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  48:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  4c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  50:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+
+00000054 <__ctors_end>:
+  54:	11 24       	eor	r1, r1
+  56:	1f be       	out	0x3f, r1	; 63
+  58:	cf e5       	ldi	r28, 0x5F	; 95
+  5a:	d8 e0       	ldi	r29, 0x08	; 8
+  5c:	de bf       	out	0x3e, r29	; 62
+  5e:	cd bf       	out	0x3d, r28	; 61
+  60:	0e 94 e0 00 	call	0x1c0	; 0x1c0 <main>
+  64:	0c 94 10 01 	jmp	0x220	; 0x220 <_exit>
+
+00000068 <__bad_interrupt>:
+  68:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+0000006c <MCAL_ADC_Init>:
+ *      Author: MAshr
+ */
+
+#include "ADC.h"
+
+void MCAL_ADC_Init(ADC_config * config) {
+  6c:	df 93       	push	r29
+  6e:	cf 93       	push	r28
+  70:	00 d0       	rcall	.+0      	; 0x72 <MCAL_ADC_Init+0x6>
+  72:	cd b7       	in	r28, 0x3d	; 61
+  74:	de b7       	in	r29, 0x3e	; 62
+  76:	9a 83       	std	Y+2, r25	; 0x02
+  78:	89 83       	std	Y+1, r24	; 0x01
+	ADCSRA |= (1<<ADEN) ; // Enable ADC
+  7a:	a6 e2       	ldi	r26, 0x26	; 38
+  7c:	b0 e0       	ldi	r27, 0x00	; 0
+  7e:	e6 e2       	ldi	r30, 0x26	; 38
+  80:	f0 e0       	ldi	r31, 0x00	; 0
+  82:	80 81       	ld	r24, Z
+  84:	80 68       	ori	r24, 0x80	; 128
+  86:	8c 93       	st	X, r24
+
+	ADCSRA |= config->prescaler ; // set pre_scaler
+  88:	a6 e2       	ldi	r26, 0x26	; 38
+  8a:	b0 e0       	ldi	r27, 0x00	; 0
+  8c:	e6 e2       	ldi	r30, 0x26	; 38
+  8e:	f0 e0       	ldi	r31, 0x00	; 0
+  90:	90 81       	ld	r25, Z
+  92:	e9 81       	ldd	r30, Y+1	; 0x01
+  94:	fa 81       	ldd	r31, Y+2	; 0x02
+  96:	84 81       	ldd	r24, Z+4	; 0x04
+  98:	89 2b       	or	r24, r25
+  9a:	8c 93       	st	X, r24
+
+	DDRA &= ~(1<<config->CH) ; //set channel as input
+  9c:	aa e3       	ldi	r26, 0x3A	; 58
+  9e:	b0 e0       	ldi	r27, 0x00	; 0
+  a0:	ea e3       	ldi	r30, 0x3A	; 58
+  a2:	f0 e0       	ldi	r31, 0x00	; 0
+  a4:	80 81       	ld	r24, Z
+  a6:	48 2f       	mov	r20, r24
+  a8:	e9 81       	ldd	r30, Y+1	; 0x01
+  aa:	fa 81       	ldd	r31, Y+2	; 0x02
+  ac:	80 81       	ld	r24, Z
+  ae:	28 2f       	mov	r18, r24
+  b0:	30 e0       	ldi	r19, 0x00	; 0
+  b2:	81 e0       	ldi	r24, 0x01	; 1
+  b4:	90 e0       	ldi	r25, 0x00	; 0
+  b6:	02 c0       	rjmp	.+4      	; 0xbc <MCAL_ADC_Init+0x50>
+  b8:	88 0f       	add	r24, r24
+  ba:	99 1f       	adc	r25, r25
+  bc:	2a 95       	dec	r18
+  be:	e2 f7       	brpl	.-8      	; 0xb8 <MCAL_ADC_Init+0x4c>
+  c0:	80 95       	com	r24
+  c2:	84 23       	and	r24, r20
+  c4:	8c 93       	st	X, r24
+
+	ADCSRA |= ( config->interrupt << ADIE) ;
+  c6:	a6 e2       	ldi	r26, 0x26	; 38
+  c8:	b0 e0       	ldi	r27, 0x00	; 0
+  ca:	e6 e2       	ldi	r30, 0x26	; 38
+  cc:	f0 e0       	ldi	r31, 0x00	; 0
+  ce:	80 81       	ld	r24, Z
+  d0:	28 2f       	mov	r18, r24
+  d2:	e9 81       	ldd	r30, Y+1	; 0x01
+  d4:	fa 81       	ldd	r31, Y+2	; 0x02
+  d6:	83 81       	ldd	r24, Z+3	; 0x03
+  d8:	88 2f       	mov	r24, r24
+  da:	90 e0       	ldi	r25, 0x00	; 0
+  dc:	88 0f       	add	r24, r24
+  de:	99 1f       	adc	r25, r25
+  e0:	88 0f       	add	r24, r24
+  e2:	99 1f       	adc	r25, r25
+  e4:	88 0f       	add	r24, r24
+  e6:	99 1f       	adc	r25, r25
+  e8:	82 2b       	or	r24, r18
+  ea:	8c 93       	st	X, r24
+	ADCSRA |= ( config->mode << ADATE) ;
+  ec:	a6 e2       	ldi	r26, 0x26	; 38
+  ee:	b0 e0       	ldi	r27, 0x00	; 0
+  f0:	e6 e2       	ldi	r30, 0x26	; 38
+  f2:	f0 e0       	ldi	r31, 0x00	; 0
+  f4:	80 81       	ld	r24, Z
+  f6:	28 2f       	mov	r18, r24
+  f8:	e9 81       	ldd	r30, Y+1	; 0x01
+  fa:	fa 81       	ldd	r31, Y+2	; 0x02
+  fc:	81 81       	ldd	r24, Z+1	; 0x01
+  fe:	88 2f       	mov	r24, r24
+ 100:	90 e0       	ldi	r25, 0x00	; 0
+ 102:	88 0f       	add	r24, r24
+ 104:	99 1f       	adc	r25, r25
+ 106:	82 95       	swap	r24
+ 108:	92 95       	swap	r25
+ 10a:	90 7f       	andi	r25, 0xF0	; 240
+ 10c:	98 27       	eor	r25, r24
+ 10e:	80 7f       	andi	r24, 0xF0	; 240
+ 110:	98 27       	eor	r25, r24
+ 112:	82 2b       	or	r24, r18
+ 114:	8c 93       	st	X, r24
+	ADMUX|=(config->data_adj << ADLAR) ;
+ 116:	a7 e2       	ldi	r26, 0x27	; 39
+ 118:	b0 e0       	ldi	r27, 0x00	; 0
+ 11a:	e7 e2       	ldi	r30, 0x27	; 39
+ 11c:	f0 e0       	ldi	r31, 0x00	; 0
+ 11e:	80 81       	ld	r24, Z
+ 120:	28 2f       	mov	r18, r24
+ 122:	e9 81       	ldd	r30, Y+1	; 0x01
+ 124:	fa 81       	ldd	r31, Y+2	; 0x02
+ 126:	82 81       	ldd	r24, Z+2	; 0x02
+ 128:	88 2f       	mov	r24, r24
+ 12a:	90 e0       	ldi	r25, 0x00	; 0
+ 12c:	88 0f       	add	r24, r24
+ 12e:	99 1f       	adc	r25, r25
+ 130:	82 95       	swap	r24
+ 132:	92 95       	swap	r25
+ 134:	90 7f       	andi	r25, 0xF0	; 240
+ 136:	98 27       	eor	r25, r24
+ 138:	80 7f       	andi	r24, 0xF0	; 240
+ 13a:	98 27       	eor	r25, r24
+ 13c:	82 2b       	or	r24, r18
+ 13e:	8c 93       	st	X, r24
+	ADMUX|= ((config->ref)<<REFS0) ;
+ 140:	a7 e2       	ldi	r26, 0x27	; 39
+ 142:	b0 e0       	ldi	r27, 0x00	; 0
+ 144:	e7 e2       	ldi	r30, 0x27	; 39
+ 146:	f0 e0       	ldi	r31, 0x00	; 0
+ 148:	80 81       	ld	r24, Z
+ 14a:	28 2f       	mov	r18, r24
+ 14c:	e9 81       	ldd	r30, Y+1	; 0x01
+ 14e:	fa 81       	ldd	r31, Y+2	; 0x02
+ 150:	85 81       	ldd	r24, Z+5	; 0x05
+ 152:	88 2f       	mov	r24, r24
+ 154:	90 e0       	ldi	r25, 0x00	; 0
+ 156:	00 24       	eor	r0, r0
+ 158:	96 95       	lsr	r25
+ 15a:	87 95       	ror	r24
+ 15c:	07 94       	ror	r0
+ 15e:	96 95       	lsr	r25
+ 160:	87 95       	ror	r24
+ 162:	07 94       	ror	r0
+ 164:	98 2f       	mov	r25, r24
+ 166:	80 2d       	mov	r24, r0
+ 168:	82 2b       	or	r24, r18
+ 16a:	8c 93       	st	X, r24
+	ADMUX|= config->CH ;
+ 16c:	a7 e2       	ldi	r26, 0x27	; 39
+ 16e:	b0 e0       	ldi	r27, 0x00	; 0
+ 170:	e7 e2       	ldi	r30, 0x27	; 39
+ 172:	f0 e0       	ldi	r31, 0x00	; 0
+ 174:	90 81       	ld	r25, Z
+ 176:	e9 81       	ldd	r30, Y+1	; 0x01
+ 178:	fa 81       	ldd	r31, Y+2	; 0x02
+ 17a:	80 81       	ld	r24, Z
+ 17c:	89 2b       	or	r24, r25
+ 17e:	8c 93       	st	X, r24
+
+}
+ 180:	0f 90       	pop	r0
+ 182:	0f 90       	pop	r0
+ 184:	cf 91       	pop	r28
+ 186:	df 91       	pop	r29
+ 188:	08 95       	ret
+
+0000018a <MCAL_ADC_GetRead>:
+
+
+uint16_t MCAL_ADC_GetRead(void) {
+ 18a:	df 93       	push	r29
+ 18c:	cf 93       	push	r28
+ 18e:	cd b7       	in	r28, 0x3d	; 61
+ 190:	de b7       	in	r29, 0x3e	; 62
+	ADCSRA|= ( 1 << ADSC) ;
+ 192:	a6 e2       	ldi	r26, 0x26	; 38
+ 194:	b0 e0       	ldi	r27, 0x00	; 0
+ 196:	e6 e2       	ldi	r30, 0x26	; 38
+ 198:	f0 e0       	ldi	r31, 0x00	; 0
+ 19a:	80 81       	ld	r24, Z
+ 19c:	80 64       	ori	r24, 0x40	; 64
+ 19e:	8c 93       	st	X, r24
+
+	while (!(ADCSRA&(1<<ADIF))) ;
+ 1a0:	e6 e2       	ldi	r30, 0x26	; 38
+ 1a2:	f0 e0       	ldi	r31, 0x00	; 0
+ 1a4:	80 81       	ld	r24, Z
+ 1a6:	88 2f       	mov	r24, r24
+ 1a8:	90 e0       	ldi	r25, 0x00	; 0
+ 1aa:	80 71       	andi	r24, 0x10	; 16
+ 1ac:	90 70       	andi	r25, 0x00	; 0
+ 1ae:	00 97       	sbiw	r24, 0x00	; 0
+ 1b0:	b9 f3       	breq	.-18     	; 0x1a0 <MCAL_ADC_GetRead+0x16>
+
+	return ADC ;
+ 1b2:	e4 e2       	ldi	r30, 0x24	; 36
+ 1b4:	f0 e0       	ldi	r31, 0x00	; 0
+ 1b6:	80 81       	ld	r24, Z
+ 1b8:	91 81       	ldd	r25, Z+1	; 0x01
+
+}
+ 1ba:	cf 91       	pop	r28
+ 1bc:	df 91       	pop	r29
+ 1be:	08 95       	ret
+
+000001c0 <main>:
+
+
+#include <avr/io.h>
+#include "ADC.h"
+
+int main (void ){
+ 1c0:	df 93       	push	r29
+ 1c2:	cf 93       	push	r28
+ 1c4:	cd b7       	in	r28, 0x3d	; 61
+ 1c6:	de b7       	in	r29, 0x3e	; 62
+ 1c8:	28 97       	sbiw	r28, 0x08	; 8
+ 1ca:	0f b6       	in	r0, 0x3f	; 63
+ 1cc:	f8 94       	cli
+ 1ce:	de bf       	out	0x3e, r29	; 62
+ 1d0:	0f be       	out	0x3f, r0	; 63
+ 1d2:	cd bf       	out	0x3d, r28	; 61
+
+ADC_config config ;
+
+config.CH = ADC_ch0 ;
+ 1d4:	1b 82       	std	Y+3, r1	; 0x03
+config.data_adj = Right ;
+ 1d6:	1d 82       	std	Y+5, r1	; 0x05
+config.interrupt = off ;
+ 1d8:	1e 82       	std	Y+6, r1	; 0x06
+config.mode = single ;
+ 1da:	1c 82       	std	Y+4, r1	; 0x04
+config.prescaler = prescaler_128 ;
+ 1dc:	87 e0       	ldi	r24, 0x07	; 7
+ 1de:	8f 83       	std	Y+7, r24	; 0x07
+config.ref =external ;
+ 1e0:	81 e0       	ldi	r24, 0x01	; 1
+ 1e2:	88 87       	std	Y+8, r24	; 0x08
+
+MCAL_ADC_Init(&config) ;
+ 1e4:	ce 01       	movw	r24, r28
+ 1e6:	03 96       	adiw	r24, 0x03	; 3
+ 1e8:	0e 94 36 00 	call	0x6c	; 0x6c <MCAL_ADC_Init>
+
+DDRC = 0xFF ;
+ 1ec:	e4 e3       	ldi	r30, 0x34	; 52
+ 1ee:	f0 e0       	ldi	r31, 0x00	; 0
+ 1f0:	8f ef       	ldi	r24, 0xFF	; 255
+ 1f2:	80 83       	st	Z, r24
+DDRD = 0xFF ;
+ 1f4:	e1 e3       	ldi	r30, 0x31	; 49
+ 1f6:	f0 e0       	ldi	r31, 0x00	; 0
+ 1f8:	8f ef       	ldi	r24, 0xFF	; 255
+ 1fa:	80 83       	st	Z, r24
+
+uint16_t reading =0 ;
+ 1fc:	1a 82       	std	Y+2, r1	; 0x02
+ 1fe:	19 82       	std	Y+1, r1	; 0x01
+	while (1){
+    reading = MCAL_ADC_GetRead() ;
+ 200:	0e 94 c5 00 	call	0x18a	; 0x18a <MCAL_ADC_GetRead>
+ 204:	9a 83       	std	Y+2, r25	; 0x02
+ 206:	89 83       	std	Y+1, r24	; 0x01
+
+    PORTD = (uint8_t)reading ;
+ 208:	e2 e3       	ldi	r30, 0x32	; 50
+ 20a:	f0 e0       	ldi	r31, 0x00	; 0
+ 20c:	89 81       	ldd	r24, Y+1	; 0x01
+ 20e:	80 83       	st	Z, r24
+    PORTC = (uint8_t)(reading>>8) ;
+ 210:	e5 e3       	ldi	r30, 0x35	; 53
+ 212:	f0 e0       	ldi	r31, 0x00	; 0
+ 214:	89 81       	ldd	r24, Y+1	; 0x01
+ 216:	9a 81       	ldd	r25, Y+2	; 0x02
+ 218:	89 2f       	mov	r24, r25
+ 21a:	99 27       	eor	r25, r25
+ 21c:	80 83       	st	Z, r24
+ 21e:	f0 cf       	rjmp	.-32     	; 0x200 <main+0x40>
+
+00000220 <_exit>:
+ 220:	f8 94       	cli
+
+00000222 <__stop_program>:
+ 222:	ff cf       	rjmp	.-2      	; 0x222 <__stop_program>

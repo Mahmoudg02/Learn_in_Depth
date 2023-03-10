@@ -1,0 +1,40 @@
+/*
+ * main.c
+ *
+ *  Created on: 4 Jan 2023
+ *      Author: MAshr
+ */
+
+
+#include <avr/io.h>
+#include "ADC.h"
+
+int main (void ){
+
+ADC_config config ;
+
+config.CH = ADC_ch0 ;
+config.data_adj = Right ;
+config.interrupt = off ;
+config.mode = single ;
+config.prescaler = prescaler_128 ;
+config.ref =external ;
+
+MCAL_ADC_Init(&config) ;
+
+DDRC = 0xFF ;
+DDRD = 0xFF ;
+
+uint16_t reading =0 ;
+	while (1){
+    reading = MCAL_ADC_GetRead() ;
+
+    PORTD = (uint8_t)reading ;
+    PORTC = (uint8_t)(reading>>8) ;
+
+	}
+
+
+
+return 0 ;
+}

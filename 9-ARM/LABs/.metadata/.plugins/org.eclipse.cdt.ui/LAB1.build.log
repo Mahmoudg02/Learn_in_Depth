@@ -1,0 +1,18 @@
+22:50:35 **** Build of configuration Debug for project LAB1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -I"D:/0-EMBEDDED_SYSTEMS/1-Keroles_Diploma_Online/my_codes/ARM/LABs/LAB1/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "LAB1.axf" @"objects.list"   -mcpu=cortex-m3 -T"D:\0-EMBEDDED_SYSTEMS\1-Keroles_Diploma_Online\my_codes\ARM\LABs\LAB1\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB1.elf
+ 
+arm-none-eabi-size   LAB1.elf 
+arm-none-eabi-objdump -h -S  LAB1.elf  > "LAB1.list"
+   text	   data	    bss	    dec	    hex	filename
+   4604	     32	   1720	   6356	   18d4	LAB1.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objdump: Warning: source file D:/0-EMBEDDED_SYSTEMS/1-Keroles_Diploma_Online/my_codes/ARM/LABs/LAB1/Debug/../Src/main.c is more recent than object file
+Finished building: LAB1.list
+ 
+
+22:50:35 Build Finished. 0 errors, 0 warnings. (took 452ms)
+

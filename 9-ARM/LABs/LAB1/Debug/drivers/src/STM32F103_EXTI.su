@@ -1,0 +1,11 @@
+../drivers/src/STM32F103_EXTI.c:48:6:NVIC_EXTI_ENABLE	16	static
+../drivers/src/STM32F103_EXTI.c:86:6:NVIC_EXTI_DISABLE	16	static
+../drivers/src/STM32F103_EXTI.c:138:6:MCAL_EXTI_GPIO_Reset	4	static
+../drivers/src/STM32F103_EXTI.c:165:6:MCAL_EXTI_GPIO_Init	32	static
+../drivers/src/STM32F103_EXTI.c:226:6:EXTI0_IRQHandler	8	static
+../drivers/src/STM32F103_EXTI.c:230:6:EXTI1_IRQHandler	8	static
+../drivers/src/STM32F103_EXTI.c:234:6:EXTI2_IRQHandler	8	static
+../drivers/src/STM32F103_EXTI.c:238:6:EXTI3_IRQHandler	8	static
+../drivers/src/STM32F103_EXTI.c:242:6:EXTI4_IRQHandler	8	static
+../drivers/src/STM32F103_EXTI.c:247:6:EXTI9_5_IRQHandler	8	static
+../drivers/src/STM32F103_EXTI.c:257:6:EXTI10_15_IRQHandler	8	static

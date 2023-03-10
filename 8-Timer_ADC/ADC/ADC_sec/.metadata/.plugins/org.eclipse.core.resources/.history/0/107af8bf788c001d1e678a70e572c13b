@@ -1,0 +1,32 @@
+/*
+ * ADC.h
+ *
+ *  Created on: 4 Jan 2023
+ *      Author: MAshr
+ */
+
+#ifndef ADC_H_
+#define ADC_H_
+
+typedef enum {
+	ADC_ch0 ,
+	ADC_ch1 ,
+	ADC_ch2 ,
+	ADC_ch3 ,
+	ADC_ch4 ,
+	ADC_ch5 ,
+	ADC_ch6 ,
+	ADC_ch7
+}ADC_channel;
+
+typedef enum {
+single ,
+free_run
+}ADC_Mode;
+
+typedef struct {
+
+	ADC_channel CH ;
+	ADC_
+}ADC_config;
+#endif /* ADC_H_ */

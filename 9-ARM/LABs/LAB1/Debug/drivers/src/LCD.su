@@ -1,0 +1,11 @@
+../drivers/src/LCD.c:19:13:_delay_ms	24	static
+../drivers/src/LCD.c:55:6:LCD_init	8	static
+../drivers/src/LCD.c:89:6:LCD_send_command	24	static
+../drivers/src/LCD.c:115:6:LCD_send_char	24	static
+../drivers/src/LCD.c:146:6:LCD_clear_screen	8	static
+../drivers/src/LCD.c:149:6:LCD_send_string	24	static
+../drivers/src/LCD.c:169:6:LCD_goto	24	static
+../drivers/src/LCD.c:178:6:LCD_send_number	32	static
+../drivers/src/LCD.c:187:6:LCD_is_Busy	8	static
+../drivers/src/LCD.c:209:6:LCD_kick	8	static
+../drivers/src/LCD.c:216:6:LCD_DATA_DIR	24	static

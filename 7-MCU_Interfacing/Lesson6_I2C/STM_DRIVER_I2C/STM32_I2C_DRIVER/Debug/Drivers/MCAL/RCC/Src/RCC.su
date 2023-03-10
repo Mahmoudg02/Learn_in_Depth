@@ -1,0 +1,4 @@
+../Drivers/MCAL/RCC/Src/RCC.c:68:10:MCAL_RCC_GetFreq_PCLK1	8	static
+../Drivers/MCAL/RCC/Src/RCC.c:81:10:MCAL_RCC_GetFreq_PCLK2	8	static
+../Drivers/MCAL/RCC/Src/RCC.c:94:10:MCAL_RCC_GetFreq_HCLK	8	static
+../Drivers/MCAL/RCC/Src/RCC.c:107:10:MCAL_RCC_GetFreq_SYSCLK	4	static

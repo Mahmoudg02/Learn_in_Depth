@@ -1,0 +1,21 @@
+/*
+ * ADC.c
+ *
+ *  Created on: 4 Jan 2023
+ *      Author: MAshr
+ */
+
+#include "ADC.h"
+
+void MCAL_ADC_Init(ADC_config * config) {
+	ADCSRA |= (1<<ADEN) ;
+
+	ADCSRA |= config->prescaler ;
+
+	DDRA |= (1<<config->CH) ;
+}
+uint16_t MCAL_ADC_GetRead(ADC_channel) {
+
+return ADC ;
+
+}

@@ -1,0 +1,16 @@
+/*
+ * main.c
+ *
+ *  Created on: 4 Jan 2023
+ *      Author: MAshr
+ */
+
+
+#include <avr/io.h>
+
+
+int main (void ){
+
+
+return 0 ;
+}

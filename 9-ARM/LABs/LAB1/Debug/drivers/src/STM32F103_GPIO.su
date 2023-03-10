@@ -1,0 +1,9 @@
+../drivers/src/STM32F103_GPIO.c:48:10:Get_CRx_Position	24	static
+../drivers/src/STM32F103_GPIO.c:104:6:MCAL_GPIO_Init	32	static
+../drivers/src/STM32F103_GPIO.c:177:6:MCAL_GPIO_Reset	24	static
+../drivers/src/STM32F103_GPIO.c:206:9:MCAL_GPIO_ReadPin	24	static
+../drivers/src/STM32F103_GPIO.c:228:6:MCAL_GPIO_WritePin	16	static
+../drivers/src/STM32F103_GPIO.c:254:10:MCAL_GPIO_ReadPort	24	static
+../drivers/src/STM32F103_GPIO.c:270:6:MCAL_GPIO_WritePort	16	static
+../drivers/src/STM32F103_GPIO.c:283:6:MCAL_GPIO_TogglePin	16	static
+../drivers/src/STM32F103_GPIO.c:297:9:MCAL_GPIO_LockPin	24	static
